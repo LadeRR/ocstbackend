@@ -4,7 +4,8 @@
   "description": "OCST Mobile Interface",
   "main": "index.html",
   "scripts": {
-    "start": "echo 'Static HTML - Upload to Netlify directly'"
+    "start": "echo 'Static HTML - Use a static hosting service like Netlify or Render Static Site'",
+    "dev": "echo 'No server needed for static HTML'"
   },
   "keywords": ["ocst", "mobile", "dispatch"],
   "author": "",
