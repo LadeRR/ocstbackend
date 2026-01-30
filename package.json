@@ -1,0 +1,12 @@
+{
+  "name": "ocst-mobile",
+  "version": "1.0.0",
+  "description": "OCST Mobile Interface",
+  "main": "index.html",
+  "scripts": {
+    "start": "echo 'Static HTML - Upload to Netlify directly'"
+  },
+  "keywords": ["ocst", "mobile", "dispatch"],
+  "author": "",
+  "license": "ISC"
+}

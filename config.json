@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "ducks",
+      "password": "ducks1234",
+      "type": "admin",
+      "phone": "0544 124 84 24"
+    },
+    {
+      "id": 2,
+      "username": "valyre",
+      "password": "valyre1234",
+      "type": "user",
+      "phone": "0533 659 19 57"
+    },
+    {
+      "id": 3,
+      "username": "lade",
+      "password": "lade1234",
+      "type": "user",
+      "phone": "0552 590 75 79"
+    }
+  ]
+}
