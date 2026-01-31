@@ -10,11 +10,18 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, { 
   cors: { 
-    origin: "*"  // Test için herkese açık, production'da kısıtlayabilirsin
+    origin: "*",
+    methods: ["GET", "POST"],
+    credentials: true
   } 
 });
 
-app.use(cors());
+// CORS düzeltmesi - tüm originlere izin ver
+app.use(cors({
+  origin: '*',
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
+}));
 app.use(express.json());
 
 // Discord Webhook'leri (env'den çekiyoruz – Render'da Environment Variables kısmına ekle)
@@ -411,5 +418,5 @@ io.on('connection', (socket) => {
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
   console.log(`🚔 OCST Backend çalışıyor → port: ${PORT}`);
-  console.log(`Render'da canlı URL: https://your-app-name.onrender.com (Render log'undan bak)`);
+  console.log(`Render'da canlı URL: https://dashboard.render.com/static/srv-d5u8jknpm1nc73dcuor0 (Render log'undan bak)`);
 });
